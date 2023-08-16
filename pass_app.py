@@ -7,7 +7,7 @@ import os
 def load_model(model_file):
     loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
     return loaded_model
-pswd_vecotrizer = open("models/pswd_cv.pkl","rb")
+pswd_vecotrizer = open("pswd_cv.pkl","rb")
 pswd_cv = joblib.load(pswd_vecotrizer)
 
 def get_key(val,my_dict):
